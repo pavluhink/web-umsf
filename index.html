@@ -1,71 +1,125 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Главная страница</title>
-  </head>
-  <body>
-    <header>
-        <h1>HTML BASIC</h1>
-        <nav class="menu">
-              <a href="#">Home</a>
-              <a href="#">Headings</a>
-              <a href="#">Table</a>
-              <a href="#">Types of lists</a>
-              <a href="#">Text formats</a>
-              <a href="#">Listquotes</a>
-              <a href="#">Registration</a>
-          </nav>          
-    </header>
-    <main>
-        <hr>
-        <p><b>Fructose</b>, or <b>fruit sugar</b>, is a simple <i>found in many plants, where it is often bonded to glucose to form the disaccharide sucrose</i>. 
-            It is one of the three dietary <u>monosaccharides</u>, along with glucose and galactose, that are absorbed directly into blood during digestion. 
-            Its formula is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> and its density is 1.694 g/cm<sup>3</sup> . 
-            Fructose was discovered by French chemist <a>Augustin-Pierre Dubrunfaut</a> in <u>1847</u>, <s>not in 1846</s>.
-        </p>
-        <hr>
-        <p>h1 defines the most important heading, h6 defines the least important heading. Font-size for h1 is the same as font-size h2, because we have to use only one h1 on the page, and it is commonly used inside header.</p>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <hr>
-        <h3>Unordered Shopping List</h3>
-        <ul>
-            <li>Fruits
-                <ul>
-                <li>Bannanas</li>
-                <li>Apples</li>
-                <li>Peaches</li>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="box-header">
+            <a href="#" class="logo">Front-end Lab</a>
+            <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
             </ul>
-        </li>
-            
-            <li>Vegetables
-                <ul>
-                    <li>Carrots</li>
-                    <li>Cucumber</li>
-                    <li>Beetroot</li>
-                </ul>
-            </li>
-            <li>Milk</li>
-            <li>Butter</li>
-          </ul>
-          <h3>Ordered To-do List</h3>
-          <ol>
-              <li>Wash your hands</li>
-              <li>Clean your appartment</li>
-              <li>Do your homework
-                  <ol>
-                      <li>Create HTML Page</li>
-                      <li>Check all requirements & folder structure</li>
-                      <li>Upload to GitHub</li>
-                  </ol>
-              </li>
-          </ol>
-    </main>
-    <footer>
+        </div>
+        <div class="header-container">
+            <div class="header-bg"></div>
+                <div class="header-content">
+                    <h1 class="title-logo">Hello! This is Front-end Lab.</h1>
+                    <p>EPAM Front-end Lab</p>
+                    <a href="#" class="header-btn">Discover More</a>
+                </div>
+        </div>
+    </header>
+    <section class="page-support">
+        <div class="container">
+            <img class="page-support__photo" src="images/blog-image1.jpg" alt="support">
+            <h2 class="title">We Help You To Make Front-end Great Again</h2>
+            <div class="box-info">
+                <img class="page-support__avatar" src="images/author-image1.jpg" alt="Jen Lopez">
+                <p>Jen Lopez</p>
+                <time datetime="2017-07-22">July 22, 2017</time>
+                <p> <i class="far fa-comment"></i> 35 Comments</p>  
+                
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam laborum cumque qui aliquid! Ipsa quos sapiente placeat magni magnam nihil, quibusdam culpa nemo ratione? Quod excepturi expedita minus dolor.</p>
+            <a href="#" class="btn">Continue Reading</a>
+        </div>
+    </section>
+    <section class="page-support">
+        <div class="container">
+            <img class="page-support__photo" src="images/blog-image2.jpg" alt="support">
+            <h2 class="title">In pretium tellus et ante accumsan</h2>
+            <div class="box-info">
+                <img class="page-support__avatar" src="images/author-image2.jpg" alt="Leo Dennis">
+                <p>Leo Dennis</p>
+                <time datetime="2017-06-10">June 10, 2017</time>
+                <p> <i class="far fa-comment"></i> 48 Comments</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam laborum cumque qui aliquid! Ipsa quos sapiente placeat magni magnam nihil, quibusdam culpa nemo ratione? Quod excepturi expedita minus dolor.</p>
+            <a href="#" class="btn">Continue Reading</a>
+        </div>
+    </section>
+    <section class="page-support">
+        <div class="container">
+            <img class="page-support__photo" src="images/blog-image3.jpg" alt="support">
+            <h2 class="title">Nam interdum maximus dolor faucibus</h2>
+            <div class="box-info">
+                <img class="page-support__avatar" src="images/author-image1.jpg" alt="Jen Lopez">
+                <p>Jen Lopez</p>
+                <time datetime="2017-05-30">May 30, 2017</time>
+                <p> <i class="far fa-comment"></i> 63 Comments</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam laborum cumque qui aliquid! Ipsa quos sapiente placeat magni magnam nihil, quibusdam culpa nemo ratione? Quod excepturi expedita minus dolor.</p>
+            <a href="#" class="btn">Continue Reading</a>
+        </div>
+    </section>
+    <section class="page-support">
+        <div class="container">
+            <img class="page-support__photo" src="images/blog-image4.jpg" alt="support">
+            <h2 class="title">The ingredients that make a great burger</h2>
+            <div class="box-info">
+                <img class="page-support__avatar" src="images/author-image2.jpg" alt="Leo Dennis">
+                <p>Leo Dennis</p>
+                <time datetime="2017-04-10">April 10, 2017</time>
+                <p> <i class="far fa-comment"></i> 124 Comments</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam laborum cumque qui aliquid! Ipsa quos sapiente placeat magni magnam nihil, quibusdam culpa nemo ratione? Quod excepturi expedita minus dolor.</p>
+            <a href="#" class="btn">Continue Reading</a>
+        </div>
+    </section>
+    <section class="page-support">
+        <div class="container">
+            <img class="page-support__photo" src="images/blog-image5.jpg" alt="support">
+            <h2 class="title">Vestibulum vel mauris nec ex tempus</h2>
+            <div class="box-info">
+                <img class="page-support__avatar" src="images/author-image1.jpg" alt="Jen Lopez">
+                <p>Jen Lopez</p>
+                <time datetime="2017-03-12">March 12, 2017</time>
+                <p> <i class="far fa-comment"></i> 35 Comments</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam laborum cumque qui aliquid! Ipsa quos sapiente placeat magni magnam nihil, quibusdam culpa nemo ratione? Quod excepturi expedita minus dolor.</p>
+            <a href="#" class="btn">Continue Reading</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2 class="footer__title">EPAM LAB</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.</p>
+                    <p class="footer__rights">Copyright © 2020 EPAM</p>
+                </div>
+                <div class="footer-rigth">
+                    <h2 class="footer__title">Talk to us</h2>
+                    <p>512 Delicious Street, San Francisco, CA 10880</p>
+                    <p>010-020-0909</p>
+                    <p>info@company.com</p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+    <script src="https://kit.fontawesome.com/df0115f0d8.js" crossorigin="anonymous"></script>
+</body>
 </html>
